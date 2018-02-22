@@ -1,6 +1,6 @@
 {
 	"name": "finger-roll",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Provides information about keyboard layouts",
 	"keywords": [
 		"keyboard-layouts",
