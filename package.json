@@ -1,0 +1,11 @@
+{
+	"name": "finger-roll",
+	"version": "0.1.0",
+	"description": "Provides information about keyboard layouts",
+	"scripts": {
+		"test": "ava tests/"
+	},
+	"devDependencies": {
+		"ava": "^0.25.0"
+	}
+}
