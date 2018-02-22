@@ -41,7 +41,7 @@ test('Public interface has not changed', t => {
 });
 
 test('toKeyFormat', t => {
-	const fingerRoll = new FingerRoll('qwerty');
+	const fingerRoll = new FingerRoll('us-qwerty');
 
 	// Requires a string
 	t.throws(() => fingerRoll.toKeyFormat());
@@ -55,7 +55,7 @@ test('toKeyFormat', t => {
 });
 
 test('getAlternate', t => {
-	const fingerRoll = new FingerRoll('qwerty');
+	const fingerRoll = new FingerRoll('us-qwerty');
 
 	// Requires a string
 	t.throws(() => fingerRoll.getAlternate());
@@ -103,7 +103,7 @@ test('isAdjacent', t => {
 });
 
 test('distanceBetween', t => {
-	const fingerRoll = new FingerRoll('qwerty');
+	const fingerRoll = new FingerRoll('us-qwerty');
 
 	// Requires two strings
 	t.throws(() => fingerRoll.distanceBetween());
@@ -122,7 +122,7 @@ test('distanceBetween', t => {
 });
 
 test('pathTo', t => {
-	const fingerRoll = new FingerRoll('qwerty');
+	const fingerRoll = new FingerRoll('us-qwerty');
 
 	// Requires two strings
 	t.throws(() => fingerRoll.pathTo());
@@ -141,7 +141,7 @@ test('pathTo', t => {
 });
 
 test('distanceToAll', t => {
-	const fingerRoll = new FingerRoll('qwerty');
+	const fingerRoll = new FingerRoll('us-qwerty');
 
 	// Requires a string
 	t.throws(() => fingerRoll.distanceToAll());
@@ -161,7 +161,7 @@ test('distanceToAll', t => {
 });
 
 test('pathToAll', t => {
-	const fingerRoll = new FingerRoll('qwerty');
+	const fingerRoll = new FingerRoll('us-qwerty');
 
 	// Requires a string
 	t.throws(() => fingerRoll.pathToAll());

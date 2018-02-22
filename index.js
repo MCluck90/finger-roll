@@ -2,7 +2,7 @@
 // Does not currently support control keys
 // Ex. Caps Lock, Tab, Shift, etc.
 class FingerRoll {
-	constructor(layout = 'qwerty') {
+	constructor(layout = 'us-qwerty') {
 		this._layout = require(`./layouts/${layout}`);
 	}
 

@@ -2,7 +2,7 @@ import test from 'ava';
 import FingerRoll from '../index';
 
 test('Keys are formatted correctly', t => {
-	let fr = new FingerRoll('qwerty');
+	let fr = new FingerRoll('us-qwerty');
 
 	// Letters are uppercase
 	t.is(fr.toKeyFormat('a'), 'A', 'Letters should be uppercase');
@@ -17,7 +17,7 @@ test('Keys are formatted correctly', t => {
 });
 
 test('Distance between keys', t => {
-	let fr = new FingerRoll('qwerty');
+	let fr = new FingerRoll('us-qwerty');
 
 	const dist = (source, dest, d) =>
 		t.is(fr.distanceBetween(source, dest), d, `${source} -> ${dest} should be ${d}`);
@@ -36,7 +36,7 @@ test('Distance between keys', t => {
 });
 
 test('Shortest path between keys', t => {
-	let fr = new FingerRoll('qwerty');
+	let fr = new FingerRoll('us-qwerty');
 
 	const isPath = (source, dest, p) => t.is(fr.pathTo(source, dest).join(', '), p.join(', '));
 
