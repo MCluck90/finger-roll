@@ -2,8 +2,18 @@
 	"name": "finger-roll",
 	"version": "0.1.0",
 	"description": "Provides information about keyboard layouts",
+	"keywords": [
+		"keyboard-layouts",
+		"fat-fingering"
+	],
+	"author": "Mike Cluck <mcluck90@gmail.com>",
+	"license": "MIT",
 	"scripts": {
 		"test": "ava tests/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/MCluck90/finger-roll.git"
 	},
 	"devDependencies": {
 		"ava": "^0.25.0"
