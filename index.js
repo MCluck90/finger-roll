@@ -45,7 +45,7 @@ class FingerRoll {
 			return [];
 		}
 
-		return this._layout.lookup[lookupKey].adjacent.slice(0);
+		return this._layout.lookup[lookupKey].adjacent.slice(0).sort();
 	}
 
 	// Are two keys adjacent?
