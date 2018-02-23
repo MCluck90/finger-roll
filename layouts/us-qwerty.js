@@ -45,7 +45,35 @@ const lookup = {
   "M":  { key: "M",  adjacent: ["K", "J", "N", ","],         alternate: null },
   ",":  { key: ",",  adjacent: ["L", "K", "M", "."],         alternate: null },
   ".":  { key: ".",  adjacent: [";", "L", ",", "/"],         alternate: null },
-  "/":  { key: "/",  adjacent: ["'", ";", "."],              alternate: null }
+  "/":  { key: "/",  adjacent: ["'", ";", "."],              alternate: null },
+
+  // Command keys
+  "Escape": { key: "Escape", adjacent: [],             alternate: null },
+  "F1":     { key: "F1",     adjacent: ["F2"],         alternate: null },
+  "F2":     { key: "F2",     adjacent: ["F1", "F3"],   alternate: null },
+  "F3":     { key: "F3",     adjacent: ["F2", "F3"],   alternate: null },
+  "F4":     { key: "F4",     adjacent: ["F3"],         alternate: null },
+  "F5":     { key: "F5",     adjacent: ["F6"],         alternate: null },
+  "F6":     { key: "F6",     adjacent: ["F5", "F7"],   alternate: null },
+  "F7":     { key: "F7",     adjacent: ["F6", "F8"],   alternate: null },
+  "F8":     { key: "F8",     adjacent: ["F7"],         alternate: null },
+  "F9":     { key: "F9",     adjacent: ["F10"],        alternate: null },
+  "F10":    { key: "F10",    adjacent: ["F9", "F11"],  alternate: null },
+  "F11":    { key: "F11",    adjacent: ["F10", "F12"], alternate: null },
+  "F12":    { key: "F12",    adjacent: ["F11"],        alternate: null },
+
+  "Tab":      { key: "Tab",      adjacent: ["Q", "CapsLock"],                          alternate: null },
+  "CapsLock": { key: "CapsLock", adjacent: ["Tab", "Q", "A", "Shift"],                 alternate: null },
+  "Shift":    { key: "Shift",    adjacent: ["CapsLock", "A", "Z", "Meta", "Control"],  alternate: null },
+  "Control":  { key: "Control",  adjacent: ["Shift", "Meta"],                          alternate: null },
+  "Meta":     { key: "Meta",     adjacent: ["Control", "Shift", "Z", "Alt"],           alternate: null },
+  "Alt":      { key: "Alt",      adjacent: ["Meta", "Z", "X", " "],                    alternate: null },
+  " ":        { key: " ",        adjacent: ["Alt", "X", "C", "V", "B", "N", "M", ","], alternate: null },
+
+  "ArrowUp":    { key: "ArrowUp",    adjacent: ["ArrowDown"],                          alternate: null },
+  "ArrowLeft":  { key: "ArrowLeft",  adjacent: ["ArrowDown"],                          alternate: null },
+  "ArrowDown":  { key: "ArrowDown",  adjacent: ["ArrowLeft", "ArrowUp", "ArrowRight"], alternate: null },
+  "ArrowRight": { key: "ArrowRight", adjacent: ["ArrowDown"],                          alternate: null }
 };
 
 const alternateLookup = {
