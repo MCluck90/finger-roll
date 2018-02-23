@@ -51,7 +51,7 @@ const lookup = {
   "Escape": { key: "Escape", adjacent: [],             alternate: null },
   "F1":     { key: "F1",     adjacent: ["F2"],         alternate: null },
   "F2":     { key: "F2",     adjacent: ["F1", "F3"],   alternate: null },
-  "F3":     { key: "F3",     adjacent: ["F2", "F3"],   alternate: null },
+  "F3":     { key: "F3",     adjacent: ["F2", "F4"],   alternate: null },
   "F4":     { key: "F4",     adjacent: ["F3"],         alternate: null },
   "F5":     { key: "F5",     adjacent: ["F6"],         alternate: null },
   "F6":     { key: "F6",     adjacent: ["F5", "F7"],   alternate: null },
