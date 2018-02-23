@@ -1,0 +1,3 @@
+## Contributing
+
+If you'd like to create a mapping for a different keyboard layout, look in the `layouts` folder. I recommend using the `us-qwerty.js` file for reference. It basically comes down to stating which keys are neighbors for every other key. Use the names given by a `keypress` event in the DOM as reference. The goal is to be able to plug this straight into a `keypress` (or similar) event and have it work out-of-the-box.
